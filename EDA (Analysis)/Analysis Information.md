@@ -1,7 +1,6 @@
 # Capstone Analysis: Decoding the Influence of Movie Reviews on Revenue
 
-**Student ID**: 010807298  
-**Author**: Melodee (Toni) Stewart
+**Author**: Melodee (Toni) 
 
 ## Table of Contents
 - [Project Overview](#project-overview)
