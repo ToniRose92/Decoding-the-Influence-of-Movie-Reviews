@@ -1,51 +1,58 @@
-# Decoding the Influence of Movie Reviews
+# Decoding the Influence of Movie Reviews on Revenue
 
 ## Project Overview
-This project explores how the sentiment and content of movie reviews influence the future success of actors and directors. Using Natural Language Processing (NLP) and sentiment analysis techniques, I analyzed public reviews to determine how mentions of actors and directors affect their future projects’ box office performance and audience reception.
+This project explores how the sentiment of movie reviews impacts the success of future films for directors and actors. Using **Natural Language Processing (NLP)**, **sentiment analysis**, and various statistical techniques, we analyze the relationship between review sentiments and box office performance. This research provides insights into how reviews can drive success in the entertainment industry, helping organizations understand the role of public perception in future projects.
 
-## Technologies & Tools Used
+## Research Question
+**How do mentions of actors and directors in movie reviews, along with the sentiment expressed, influence their future projects' revenue and success metrics?**
+
+## Tools & Technologies Used
 - **Programming Languages**: Python
-- **Libraries**: Pandas, Scikit-learn, Matplotlib, Seaborn, NLP libraries
-- **Data Sources**: Rotten Tomatoes, Metacritic, IMDb
-- **Other Tools**: Jupyter Notebooks
+- **Libraries**: Pandas, Scikit-learn, NLTK (NLP), Matplotlib, Seaborn
+- **Statistical Models**: Mann-Whitney U Test, Spearman’s Rank Correlation, Generalized Linear Models (GLM), Mixed-Effects Models, Cohen's d Effect Size
+- **Data Sources**: Publicly available movie-related datasets from Kaggle
+- **Visualization**: Scatter plots, bar charts, heatmaps, and time-series graphs
 
 ## Methodology
-1. **Data Collection & Cleaning**: Extracted review data from multiple sources and performed thorough data cleaning.
-2. **Sentiment Analysis**: Used NLP techniques to classify the sentiment of reviews.
-3. **Impact Analysis**: Assessed the relationship between review sentiment and box office success.
+1. **Data Collection & Preparation**:
+   - Data was sourced from multiple publicly available datasets on Kaggle, focusing on movie reviews, revenue, and other success metrics.
+   - Data cleaning and merging were performed using Python, with extensive preprocessing steps to address missing or inconsistent data.
+   
+2. **Sentiment Analysis**:
+   - Reviews were tokenized, and sentiment scores were assigned using NLP libraries. These scores were aggregated for both actors and directors across multiple projects.
 
-## Key Findings
-- Positive sentiment in reviews significantly correlates with an increase in box office revenue for directors.
-- Neutral sentiment had a surprisingly positive impact on actors' revenue.
-- Further analysis showed that certain genres were more influenced by reviews than others.
+3. **Statistical Testing**:
+   - The relationship between sentiment scores and revenue was evaluated using statistical tests, including Mann-Whitney U Tests and Spearman’s Rank Correlation.
+   - **Generalized Linear Models (GLMs)** were applied to assess how much of the variance in revenue can be explained by sentiment and review volume.
+   - **Mixed-Effects Models** were used to account for random effects between actors and directors.
+
+## Key Insights
+- **Positive Sentiment Boosts Revenue**: Positive reviews were found to have a statistically significant impact on revenue for both actors and directors, with large effect sizes.
+- **Neutral Sentiment Matters**: Neutral sentiment had a borderline but notable impact, particularly for actors.
+- **Review Count is Critical**: The number of reviews was consistently a significant predictor of future success.
+
+## Challenges & Learnings
+- The project involved complex data cleaning and merging processes, which were more challenging than anticipated. Iterative approaches were used to ensure data quality.
+- Low R-squared values in GLM models suggest that other factors beyond review sentiment may also play a role in determining revenue, which could be a focus for future research.
+
+## Visualizations
+Key visualizations include scatter plots showing the correlation between sentiment and revenue, as well as bar charts demonstrating effect sizes for actors and directors. These can be viewed in the **notebooks** or **visualizations** section of the repository.
 
 ## How to Run
 1. Clone the repository.
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run the Jupyter notebook for analysis.
+3. Open the Jupyter notebook to run the analysis.
 
-## Key Takeaways
+## Conclusion
+The analysis shows a strong relationship between positive sentiment in movie reviews and box office success, highlighting the importance of public perception in the entertainment industry. While reviews explain some of the variance in revenue, future research should investigate additional factors that contribute to a film's financial success.
 
-### Conclusions Drawn
-The conclusions from the analysis are multi-layered and insightful. Positive sentiments in reviews were found to have a statistically significant positive impact on revenue for both actors and directors.
-
-### Effective Storytelling Through Tools and Graphical Representations
-For effective storytelling, sophisticated tools like Generalized Linear Models (GLMs) and Mixed-Effects models were used. These tools were instrumental in providing a nuanced understanding of the complex relationships at play.
-
-### Recommendations Based on Findings
-Based on the analysis, two key recommendations are provided for encouraging positive reviews and for future research focus.
-
-## Contact
-Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/tonirgaray/) for collaboration or questions.
+---
 
 ### Timeline
 The project follows the CRISP-DM methodology and is planned over 6 weeks, with milestones ranging from business understanding to deployment.
 
 ### Ethical Considerations
 All sources used will be properly cited and referenced, adhering to ethical guidelines for academic and professional work.
-
-### Communication
-The final report will be presented in a professional format suitable for academic or industry audiences, with clear writing and logical organization.
 
 ## Appendices
 
